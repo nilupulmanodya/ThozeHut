@@ -195,3 +195,44 @@ li {
 }
 
 /*CSS for session 3 ends here*/
+
+/*CSS for footer starts here*/
+
+.footer{
+	background-color: black;
+	height:220px;
+}
+
+.footer_1{
+
+	display: inline-block;
+	background: none;
+	width : 30%;
+	height:100%;
+	margin:0% 1.2%;
+	border:1px solid white;
+	vertical-align: top;
+	border-radius: 25px;
+}
+
+.footer_1 p{
+	color:white;
+	background: none;
+}
+.footer_1 p b{
+	color:white;
+	background: none;	
+}
+.footer_1  a{
+	color:white;
+	background: none;	
+}
+
+.footer_1 a img{
+	height:30px;
+	width:30px;
+	background: none;
+	margin:2px;
+}
+
+/*CSS for footer ends here*/
