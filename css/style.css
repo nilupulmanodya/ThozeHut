@@ -7,13 +7,13 @@ version : 1.0
 /*CSS for homepage*/
 	/*background image*/
 *{
-	background-color: rgb(142, 57, 253);
+	background-color: #344A6B;
 }
 .container{
     width: 80%;
     margin: 10px auto;
 	padding: 0%;
-	border:1px solid black;
+
 	border-radius: 25px;
 	width: 95%;
 
@@ -27,7 +27,7 @@ li {
   .logo-image{
     width: 46px;
     height: 46px;
-    border-radius: 50%;
+
     overflow: hidden;
     margin-top: -6px;
 }
@@ -35,17 +35,21 @@ li {
 .navigation-bar {
     width: 100%;  /* i'm assuming full width */
 	height: 80px; /* change it to desired width */
+	background-color: #8998af;
+	border-radius: 25px;
+	
 }
     
 .logo {
     display: inline-block;
     vertical-align: top;
-    width: 80px;
-    height: 80px;
+    width: 84px;
+    height: 77px;
     margin-right: 20px;/*need to change this*/
 	margin-top: 0;
-	border:1px solid black;
+	border:1px solid #8998af;
 	border-radius: 25px;
+
 
 }
 .navigation-bar > a {
@@ -53,7 +57,10 @@ li {
     vertical-align: top;
     margin-right: 20px;
     height: 80px;        /* if you want it to take the full height of the bar */
-    line-height: 80px;    /* if you want it vertically middle of the navbar */
+	line-height: 80px;    /* if you want it vertically middle of the navbar */
+	background-color: #8998af;
+	
+	border-radius: 25px;
 }
 
 .navigation-bar .search-container {
@@ -67,8 +74,9 @@ li {
   .navigation-bar input[type=text] {
 	
 	font-size: 17px;
-	border: 1px solid red;
-	border-radius: 25px;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: #8998af;
 
 	
   }
@@ -82,6 +90,8 @@ li {
 	font-size: 17px;
 	border: none;
 	cursor: pointer;
+	
+	
 	
   }
   
@@ -106,6 +116,24 @@ li {
 	overflow: hidden;
 	margin-top: 15px;  
   }
+
+  .tg{
+	  color:black;
+	  text-shadow: transparent;
+	  font-weight: bold;
+	  text-decoration: none;
+  }
+  .tg:hover{
+	  color: rgb(65, 64, 64);
+  }
+
+ .tg_2{
+	color:#7e7e7e(236, 177, 177);
+	text-shadow: transparent;
+	font-weight: bold;
+	text-decoration: none;	  
+  }
+
 /*CSS for nav bar ends here*/
 
 
