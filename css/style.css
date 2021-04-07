@@ -1,5 +1,266 @@
-.class
-{
-	display: block;
-	color: #00ff00;
+/* 
+Author : DevThut
+Theme : Food ordering web site
+version : 1.0
+*/
+
+/*CSS for homepage*/
+	/*background image*/
+*{
+	background-color: #344A6B;
 }
+.container{
+    width: 80%;
+    margin: 10px auto;
+	padding: 0%;
+
+	border-radius: 25px;
+	width: 95%;
+
+}
+
+li {
+	float: left;
+
+  }
+
+  .logo-image{
+    width: 46px;
+    height: 46px;
+
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.navigation-bar {
+    width: 100%;  /* i'm assuming full width */
+	height: 80px; /* change it to desired width */
+	background-color: #8998af;
+	border-radius: 25px;
+	
+}
+    
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 84px;
+    height: 77px;
+    margin-right: 20px;/*need to change this*/
+	margin-top: 0;
+	border:1px solid #8998af;
+	border-radius: 25px;
+
+
+}
+.navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 80px;        /* if you want it to take the full height of the bar */
+	line-height: 80px;    /* if you want it vertically middle of the navbar */
+	background-color: #8998af;
+	
+	border-radius: 25px;
+}
+
+.navigation-bar .search-container {
+	display: inline-block;
+	margin-top: 25px;
+	margin-right: 50px;
+	
+	
+  }
+  
+  .navigation-bar input[type=text] {
+	
+	font-size: 17px;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: #8998af;
+
+	
+  }
+  
+  .navigation-bar .search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	
+	
+	
+  }
+  
+  .navigation-bar .search-container button:hover {
+	background: #ccc;
+  }
+  
+  .user-logo{
+	width: 46px;
+    height: 46px;
+    border-radius: 100%;
+	overflow: hidden;
+	
+	margin-top: 15px; 
+  }
+
+  .cart-logo{
+	
+	width: 46px;
+    height: 46px;
+    border-radius: 100%;
+	overflow: hidden;
+	margin-top: 15px;  
+  }
+
+  .tg{
+	  color:black;
+	  text-shadow: transparent;
+	  font-weight: bold;
+	  text-decoration: none;
+  }
+  .tg:hover{
+	  color: rgb(65, 64, 64);
+  }
+
+ .tg_2{
+	color:#7e7e7e(236, 177, 177);
+	text-shadow: transparent;
+	font-weight: bold;
+	text-decoration: none;	  
+  }
+
+/*CSS for nav bar ends here*/
+
+
+/*CSS for session 1*/
+.session1{
+	background-image: url("../images/session1.jpeg");
+	height: 230px;	
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+  .session1_1{
+	display: inline-block;
+	background: none;
+	width : 60%;
+	height:100%;
+	border:1px solid black;
+  }
+  .session1_2{
+	display: inline-block;
+	background: none;
+	width : 20%;
+	height:80%;
+	margin:2% 2%;
+	border:1px solid black;
+	float : right;
+	border-radius: 25px;
+  }
+/*CSS for session 1 ends here*/
+
+/*CSS for session 2 starts here*/
+.session2{
+	background-color: black;
+	height:80px;
+	color: blanchedalmond;
+}
+.session2_1{
+	display: inline-block;
+	background: none;
+	width : 65%;
+	height:100%;
+	border:1px solid black;
+}
+.session2_1 h1{
+	background: none;
+}
+.session2_2 {
+
+	display: inline-block;
+	background: none;
+	width : 20%;
+	height:80%;
+	margin:0.5% 1%;
+	border:1px solid orange;
+	float : right;
+	
+	
+}
+.session2_2 a{
+	background: none;
+}
+.session2_2 a img{
+	background: none;
+	width:40%;
+	margin :1% 1%;
+	height :80%;
+	border: 1px solid red;
+}
+
+/*CSS for session 2 ends here*/
+
+/*CSS for session 3 starts here*/
+.session3{
+	
+	height :300px;
+	border: 1px solid red;
+}
+.session3_0{
+	display: inline-block;
+	background: none;
+	width : 30%;
+	height:100%;
+	margin:0% 1.2%;
+	border:1px solid black;
+	vertical-align: top;
+	border-radius: 25px;
+}
+
+/*CSS for session 3 ends here*/
+
+/*CSS for footer starts here*/
+
+.footer{
+	background-color: black;
+	height:220px;
+}
+
+.footer_1{
+
+	display: inline-block;
+	background: none;
+	width : 30%;
+	height:100%;
+	margin:0% 1.2%;
+	border:1px solid white;
+	vertical-align: top;
+	border-radius: 25px;
+}
+
+.footer_1 p{
+	color:white;
+	background: none;
+}
+.footer_1 p b{
+	color:white;
+	background: none;	
+}
+.footer_1  a{
+	color:white;
+	background: none;	
+}
+
+.footer_1 a img{
+	height:30px;
+	width:30px;
+	background: none;
+	margin:2px;
+}
+
+/*CSS for footer ends here*/
