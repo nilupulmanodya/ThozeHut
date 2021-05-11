@@ -84,6 +84,7 @@ div.menus{
   background-repeat: no-repeat;
   margin: 10px auto;
   display: inline-block;
+  opacity: 85%;
   
   background-size:cover;
   border-radius: 80px; 
@@ -123,6 +124,7 @@ div.menus{
 .detail{
   display: flex;
   background-color: transparent;
+
 }
 .name{
   display: inline-block;
