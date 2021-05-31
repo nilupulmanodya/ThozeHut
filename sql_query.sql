@@ -7,6 +7,22 @@ use thozehut;
 
 */
 
+/*Table structure for table `admin`*/
+
+DROP TABLE IF EXISTS admin;
+CREATE TABLE admin 
+(id int(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+fullName varchar(255) NOT NULL,
+username varchar(255) NOT NULL,
+password varchar(255) NOT NULL);
+
+
+/*Dumping data for table `admin`*/
+
+INSERT INTO admin (id, fullName, username, password) 
+VALUES(4, 'admin', 'admin', 'admin');
+
+
 /*##create customers table##########*/
 
 DROP TABLE IF EXISTS users;
