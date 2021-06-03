@@ -23,11 +23,11 @@
             }
 
             if (isset($_GET['error'])) {
-                if ($_GET['error'] = "emptyInput") {
+                if ($_GET['error'] == "emptyInput") {
                     echo "<p class='error'>Fill all fields!</p>";
                 }
                 
-                else if ($_GET['error'] = "invalid") {
+                else if ($_GET['error'] == "invalid") {
                     echo "<p class='error'>Incorrect email or password!</p>";
                 }
             }
