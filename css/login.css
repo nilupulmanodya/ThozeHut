@@ -113,3 +113,36 @@ input[type="password"] {
   font-size: 18px;
   border-radius: 20px;
 }
+
+.error{
+  text-align: center;
+  background: rgba(252, 177, 177, 0.7);
+  color: #BD0707;
+  font-weight: bold;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 5px auto;
+}
+
+.login .success{
+  text-align: center;
+  background: rgba(172, 252, 134, 0.7);
+  color: #0B900A;
+  font-weight: bold;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 5px auto;
+}
+
+.login .error{
+  text-align: center;
+  background: rgba(252, 177, 177, 0.7);
+  color: #BD0707;
+  font-weight: bold;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 5px auto;
+}
