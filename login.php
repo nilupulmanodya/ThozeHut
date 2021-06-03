@@ -26,6 +26,10 @@
                 if ($_GET['error'] = "emptyInput") {
                     echo "<p class='error'>Fill all fields!</p>";
                 }
+                
+                if ($_GET['error'] = "invalid") {
+                    echo "<p class='error'>Incorrect email or password!</p>";
+                }
             }
             ?>
 
