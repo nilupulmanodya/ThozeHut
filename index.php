@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -43,7 +47,16 @@
 				<a href="#" style="float: right;">
 					<img class="user-logo" src="">
 				</a>
-				<a class="tg_2" style="float: right;" href="login.html">User Account</a>
+				
+				<?php
+				if (isset($_SESSION['username'])) {
+					echo "<a class='tg_2' style='float: right;'' href='includes/logout.inc.php'>Log Out</a>";
+				}
+				else{
+					echo '<a class="tg_2" style="float: right;" href="login.php">User Account</a>';
+				}
+				?>
+				
 				<a href="#" style="float: right;">
 					<img class="cart-logo" src="images/assets/usr.png">
 				</a>
