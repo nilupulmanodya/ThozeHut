@@ -23,11 +23,11 @@ body {
 }
 
 .avator {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   position: absolute;
-  top: -50px;
-  left: calc(50% - 50px);
+  top: -40px;
+  left: calc(50% - 40px);
 }
 
 h1 {
@@ -73,7 +73,7 @@ input[type="password"] {
 
 .signup {
   width: 320px;
-  height: 500px;
+  height: 530px;
   background: rgba(0, 0, 0, 0.5);
   top: 50%;
   left: 50%;
