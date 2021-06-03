@@ -27,7 +27,7 @@
                     echo "<p class='error'>Fill all fields!</p>";
                 }
                 
-                if ($_GET['error'] = "invalid") {
+                else if ($_GET['error'] = "invalid") {
                     echo "<p class='error'>Incorrect email or password!</p>";
                 }
             }
