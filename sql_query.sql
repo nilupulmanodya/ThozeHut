@@ -27,12 +27,12 @@ VALUES(4, 'admin', 'admin', 'admin');
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE users
-(user_id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
-first_name varchar(20) NOT NULL,
-last_name varchar(20) NOT NULL,
-email varchar(20) NOT NULL,
-username varchar(20) NOT NULL UNIQUE,
-password varchar(20) NOT NULL);
+(user_id int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+first_name varchar(255) NOT NULL,
+last_name varchar(255) NOT NULL,
+email varchar(255) NOT NULL,
+username varchar(255) NOT NULL UNIQUE,
+password varchar(255) NOT NULL);
 
 
 
