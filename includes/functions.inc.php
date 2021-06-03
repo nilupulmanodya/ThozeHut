@@ -115,8 +115,7 @@ function loginUser($conn, $username, $password){
         header("Location:../index.php?login=success");
     }
     else{
-        $_SESSION['login'] = "<div class='log-error'>Username or password invalid<div>";
 
-        header("Location:admin_log.php?login=failed");
+        header("Location:../login.php?error=invalid");
     }
 }
