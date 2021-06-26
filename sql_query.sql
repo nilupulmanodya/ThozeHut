@@ -26,13 +26,15 @@ VALUES(4, 'admin', 'admin', 'admin');
 /*##create customers table##########*/
 
 DROP TABLE IF EXISTS users;
-CREATE TABLE users
-(user_id int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-first_name varchar(255) NOT NULL,
-last_name varchar(255) NOT NULL,
-email varchar(255) NOT NULL,
-username varchar(255) NOT NULL UNIQUE,
-password varchar(255) NOT NULL);
+CREATE TABLE users (
+  user_id int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  first_name varchar(255) NOT NULL,
+  last_name varchar(255) NOT NULL,
+  email varchar(255) NOT NULL,
+  username varchar(255) NOT NULL,
+  password varchar(255) NOT NULL,
+  status varchar(255) NOT NULL
+);
 
 
 
@@ -48,12 +50,13 @@ VALUES (0, "kamal", "kamanapala", "kamal@123.csa",  "kamal","kamal");
 
 /*###create table items#######################################################*/
 DROP TABLE IF EXISTS items;
-CREATE TABLE items
-(item_id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
-item_name varchar(20) NOT NULL,
-category varchar(20),/*foods/drinks/desserts*/
-image_src varchar(30),
-price int NOT NULL);
+CREATE TABLE items (
+  item_id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  item_name varchar(255) NOT NULL,
+  category varchar(20) NOT NULL,
+  image_src varchar(30) NOT NULL,
+  price int(11) NOT NULL
+);
 
 /*#################################################################################*/
 
