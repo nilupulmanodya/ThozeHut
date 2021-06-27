@@ -113,6 +113,24 @@ function loginUser($conn, $username, $password){
     	$_SESSION['username'] = $username;
     	
         header("Location:../index.php?login=success");
+	
+	$sql2 = "SELECT * FROM users";
+
+        $result2 = mysqli_query($conn, $sql);
+
+        if ($result2 == TRUE) {
+            $count1 = mysqli_num_rows($result);
+
+            if ($count1 == 1) {
+        	$row = mysqli_fetch_assoc($result);
+        
+        	$status = $row['status'];
+
+        	if ($status == "Block") {
+        	     header("Location:../login.php?error=accessBlocked");
+                }
+	    }
+        }
     }
     else{
         $_SESSION['login'] = "<div class='log-error'>Username or password invalid<div>";
