@@ -1,4 +1,8 @@
-<?php include_once '../includes/check.inc.php'; ?>
+<?php 
+include_once '../includes/check.inc.php'; 
+
+include_once '../includes/dbh.inc.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,15 +40,31 @@
             <h1>DASHBOARD</h1>
     
             <div class="col-4">
-                <h1>1</h1>
+                <?php
+                $sql = "SELECT * FROM users";
+
+                $result = mysqli_query($conn, $sql);
+
+                $count = mysqli_num_rows($result);
+                ?>
+                
+                <h1><?php echo $count ?></h1>
                 <br>
-                Summery
+                Users
             </div>
     
             <div class="col-4">
-                <h1>1</h1>
+                <?php
+                $sql2 = "SELECT * FROM items";
+
+                $result2 = mysqli_query($conn, $sql2);
+
+                $count2 = mysqli_num_rows($result2);
+                ?>
+
+                <h1><?php echo $count2 ?></h1>
                 <br>
-                Summery
+                Foods
             </div>
     
             <div class="col-4">
