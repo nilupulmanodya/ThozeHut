@@ -30,6 +30,10 @@
                 else if ($_GET['error'] == "invalid") {
                     echo "<p class='error'>Incorrect email or password!</p>";
                 }
+                
+                else if ($_GET['error'] == "accessBlocked") {
+                    echo "<p class='error'>You have been blocked!</p>";
+                }
             }
             ?>
 
