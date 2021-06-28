@@ -168,12 +168,12 @@ if (isset($_POST['submit'])) {
     if ($count == 1) {
         $_SESSION['user'] = $username;
 
-        header("Location:home.php?login=success");
+        header("Location:admin/home.php?login=success");
     }
     else{
         $_SESSION['login'] = "<div class='log-error'>Username or password invalid<div>";
 
-        header("Location:admin_log.php?login=failed");
+        header("Location:admin?login=failed");
     }
 }
 

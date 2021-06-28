@@ -1,0 +1,14 @@
+.bg{
+    display:flex ;
+    
+}
+
+.tx{
+    width:40% ;
+    text-align: center;
+}
+
+.tx1{
+    float:right;
+    width:40% ;
+}
