@@ -6,7 +6,7 @@ version : 1.0
 
 /*CSS for homepage*/
 	/*background image*/
-*{
+body{
 	background-color: #344A6B;
 }
 .container{
