@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="css/cart.css">
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -16,8 +16,9 @@
 <body>
 
 
-	<div class="container">
-
+	
+<!--session 0 strts here-->
+<div class="container">
 	<!--navigation bar seccion start here-->
 	<nav class="navigation-bar" id="myTopnav">
 		<a href="#">
@@ -52,9 +53,10 @@
 		  </a>
 	</nav>
 	<!--navigation bar seccion end here-->
-	</div>
-
-
+	
+	
+</div>
+<!--session 0 ends here-->
 
 
 
@@ -73,7 +75,7 @@
 
 		<div>
 			<form method="post">
-				<table class="center">
+				<table class="center table_1">
 
 			
 					<tr>
@@ -81,13 +83,13 @@
 						<img style="width: 150; height: 100px;"src="back.jpg" alt="No image forund">
 						</td>	
 						<td>
-							<p>Those</p>
+							<p><b>Those</b></p>
 						</td>
 						<td>
-							<p>Rs.40</p>
+							<p><b>Rs.40</b></p>
 						</td>
 						<td>
-							<p>Quentity</p><input type="text" placeholder="4">
+							<p><b>Quentity</b></p><input type="text" placeholder="4">
 						</td>
 					</tr>
 					
@@ -97,13 +99,13 @@
 						<img style="width: 150; height: 100px;"src="images/image.jpg" alt="No image forund">
 						</td>	
 						<td>
-							<p>Those</p>
+							<p><b>Those</b></p>
 						</td>
 						<td>
-							<p>Rs.40</p>
+							<p><b>Rs.40</b></p>
 						</td>
 						<td>
-							<p>Quentity</p><input type="textarea" placeholder="4">
+							<p><b>Quentity</b></b></p><input type="textarea" placeholder="4">
 						</td>
 					</tr>
 					<tr>
@@ -111,13 +113,13 @@
 						<img style="width: 150; height: 100px;"src="images/image.jpg" alt="No image forund">
 						</td>	
 						<td>
-							<p>Those</p>
+							<p><b>Those</b></p>
 						</td>
 						<td>
-							<p>Rs.40</p>
+							<p><b>Rs.40</b></p>
 						</td>
 						<td>
-							<p>Quentity</p><input type="text" placeholder="4">
+							<p><b>Quentity</b></p><input type="text" placeholder="4">
 						</td>
 					</tr>
 					<tr>
@@ -136,16 +138,16 @@
 					</tr>
 					<tr>
 						<td>
-						<img style="width: 150; height: 100px;"src="images/back.jpg" alt="No image forund">
+						<img style="width: 150; height: 100px;"src="back.jpg" alt="No image forund">
 						</td>	
 						<td>
-							<p>Those</p>
+							<p><b>Those</b></p>
 						</td>
 						<td>
-							<p>Rs.40</p>
+							<p><b>Rs.40</b></p>
 						</td>
 						<td>
-							<p>Quentity</p><input type="text" placeholder="4">
+							<p><b>Quentity</b></p><input type="text" placeholder="4">
 						</td>
 					</tr>
 
@@ -161,26 +163,37 @@
 						<table class="center">
 							<tr>
 								<td>
+									<b>
 									Sub Total
+									</b>
 								</td>
-								<td>
+								<td><b>
 									Rs.100
+									</b>
 								</td>
 							</tr>
 							<tr>
 								<td>
+									<b>
 									Delivery Fee
+									</b>
 								</td>
 								<td>
+									<b>
 									Rs.50
+									</b>
 								</td>
 							</tr>
 							<tr>
 								<td>
+									<b>
 									Total Price
+									</b>
 								</td>
 								<td>
+									<b>
 									Rs.150
+									</b>
 								</td>
 							</tr>
 							<tr>
@@ -193,7 +206,9 @@
 							</tr>
 							<tr>
 								<td>
+									<b>
 									Enter Your Location
+									</b>
 								</td>
 								<td >
 									<textarea style="height: 100px;">
@@ -204,7 +219,9 @@
 							</tr>
 							<tr>
 								<td>
+									<b>
 									Contact Number
+									</b>
 								</td>
 								<td>
 									<input type="text">
@@ -228,6 +245,50 @@
 		<br>
 		
 </div>
+
+				<!-- footer starts here-->
+
+				<div class="container footer">
+					<div class="footer_1">
+						<p><b>Hours :</b></p>
+						
+						<p>Mon-Fri: 8.00am - 9.00pm</p>
+						<p>Sat : 8.00am - 6.00pm</p>
+						<p>Sunday closed</p>
+					
+					</div>
+					<div class="footer_1">
+						<p><b>About :</b></p>
+						
+						<a href="#">ABOUT US</a><br>
+						<a href="#">FEEDBACK</a><br>
+						<a href="#">HOTLINE</a><br>
+						<a href="#">LOCATION</a>
+		
+					</div>
+					<div class="footer_1">
+						<p><b>Find us on Social Media :</b></p>
+						<a href="#"><img src="images/assets/social media.png"></a>
+		
+					</div>
+		
+		
+				</div>
+		
+				<!--Footer ends here-->
+
+<script>
+	function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		 if (x.className === "navigation-bar") {
+			x.className += " responsive";
+		 } else {
+			x.className = "navigation-bar";
+		  }
+	}
+
+	
+</script>
 
 </body>
 </html>
