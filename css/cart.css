@@ -56,6 +56,10 @@ th, td {
 	padding:5px
   
 }
+.tbl_img{
+	width: 150;
+	height: 100px;
+}
 
 .table_1 tr {
 	border-bottom: 2pt solid #722529;
@@ -73,54 +77,28 @@ h1 {
 	color:green;
 }
 
+/*Responsive for cart*/
 
 
 
 
-@media (max-width: 700px){
-	
-	#wl{
-		float:left;
-	}
-
-	#fs{
-		float: left;
-	}
-	#vo{
-		float: left;
-	}
-	
-	#button2{
-		margin-right: 10px;
-	}
-	#topay{
-		float: left;
-
-		}
-	
-	#toship{
-		float: left;
-		
-	}
+@media (max-width:450px){
 	
 	
-	#torec{
-		float:right;
 
+		.table_1 tr {
+			border-bottom: hidden;
+		  }
+		  .tbl_img{
+			width: 50;
+			height: 50px;
+
+		  }
+		  .table_input {
+			width: 50px;
+		  }
 		
 	
-	}
-	#tocan{
-		
-		float:right;
-
-	}
-
-	#mess{
-		float: left;
-	}
-	#pao{
-		float: left;
 	}
 
 
