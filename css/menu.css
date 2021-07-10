@@ -1,5 +1,10 @@
+.show{
+  display: block;
+}
 
-
+.hide{
+  display: none;
+}
 
 .container{
     width: 80%;
@@ -80,9 +85,9 @@ div.menus{
 .board{
   background-image:url("../images/menuback.png");
   background-repeat: no-repeat;
+  
   margin: 10px auto;
   display: inline-block;
-  opacity: 85%;
   
   background-size:cover;
   border-radius: 80px; 
@@ -102,7 +107,7 @@ div.menus{
 
 /* Remove extra left and right margins, due to padding */
 .row {
-  margin: 30px;
+  margin: 3px;
   background-color: transparent;
   display: inline-block;
 }
@@ -111,6 +116,7 @@ div.menus{
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
+  min-width: 300px;
   margin: auto;
   text-align: center;
   font-family: arial;
@@ -122,7 +128,6 @@ div.menus{
 .detail{
   display: flex;
   background-color: transparent;
-
 }
 .name{
   display: inline-block;
