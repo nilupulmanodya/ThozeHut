@@ -44,22 +44,19 @@ session_start();
 					<i class="fa fa-bars dd"></i>
 				</a>
 
-				<a href="#" style="float: right;">
-					<img class="user-logo" src="">
-				</a>
+				
 				
 				<?php
 				if (isset($_SESSION['username'])) {
 					echo "<a class='tg_2' style='float: right;'' href='includes/logout.inc.php'>Log Out</a>";
+					echo "<a href='#' style='float: right;'> <img class='cart-logo' src='images/assets/cart.png'> </a>";
 				}
 				else{
-					echo '<a class="tg_2" style="float: right;" href="login.php">User Account</a>';
+					echo '<a class="tg_2" style="float: right;" href="login.php">login</a>';
 				}
 				?>
 				
-				<a href="#" style="float: right;">
-					<img class="cart-logo" src="images/assets/usr.png">
-				</a>
+				
 				
 
 			</div>
@@ -68,6 +65,16 @@ session_start();
 			
 		</div>
 		<!--session 0 ends here-->
+--------------------------
+		<?php
+            if (isset($_SESSION['username'])) {
+                
+                    echo $_SESSION['username'];
+                }else{
+					echo "nooo:";
+			}
+			?>
+-----------------------------------
 
 		<!-- Session 1 starts here -->
 		<div class="container session1">

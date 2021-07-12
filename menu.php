@@ -74,7 +74,7 @@
 	
 					require "php/connect.php";
 	
-	            	$sql1 = "SELECT * FROM items WHERE category='foods'";
+	            	$sql1 = "SELECT * FROM items WHERE category='Food'";
 	            	$result1 = mysqli_query($conn, $sql1);
 	            
 	            	if (mysqli_num_rows($result1) > 0) {
@@ -88,7 +88,7 @@
 	            
 					<div class="column">	
 						<div class="card">
-  							<img src="images/<?php echo $row1["image_src"]; ?>" alt="Denim Jeans" style="width:100%; background-color: transparent;">
+  							<img src="images/food/<?php echo $row1["image_src"]; ?>" alt="Denim Jeans" style="width:100%; background-color: transparent;">
   							<div class="detail">
   								<div class="name">
   									<h1 style="margin-bottom:0px; margin-top: 15px; "><?php echo $row1["item_name"]; ?></h1>	
@@ -127,7 +127,7 @@
 	
 					
 	
-	            	$sql2 = "SELECT * FROM items WHERE category='drinks'";
+	            	$sql2 = "SELECT * FROM items WHERE category='Drink'";
 	            	$result2 = mysqli_query($conn, $sql2);
 	            
 	            	if (mysqli_num_rows($result2) > 0) {
@@ -139,7 +139,7 @@
 	            
 					<div class="column">	
 						<div class="card">
-  							<img src="images/<?php echo $row2["image_src"]; ?>" alt="Denim Jeans" style="width:100%; background-color: transparent;">
+  							<img src="images/food/<?php echo $row2["image_src"]; ?>" alt="Denim Jeans" style="width:100%; background-color: transparent;">
   							<div class="detail">
   								<div class="name">
   									<h1 style="margin-bottom:0px; margin-top: 15px; "><?php echo $row2["item_name"]; ?></h1>	
@@ -178,7 +178,7 @@
 	
 					
 	
-	            	$sql3 = "SELECT * FROM items WHERE category='desserts'";
+	            	$sql3 = "SELECT * FROM items WHERE category='Desert'";
 	            	$result3 = mysqli_query($conn, $sql3);
 	            
 	            	if (mysqli_num_rows($result3) > 0) {
@@ -190,7 +190,7 @@
 	            
 					<div class="column">	
 						<div class="card">
-  							<img src="images/<?php echo $row3["image_src"]; ?>" alt="Denim Jeans" style="width:100%; background-color: transparent;">
+  							<img src="images/food/<?php echo $row3["image_src"]; ?>" alt="Denim Jeans" style="width:100%; background-color: transparent;">
   							<div class="detail">
   								<div class="name">
   									<h1 style="margin-bottom:0px; margin-top: 15px; "><?php echo $row3["item_name"]; ?></h1>	

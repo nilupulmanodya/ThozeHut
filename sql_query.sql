@@ -41,10 +41,10 @@ CREATE TABLE users (
 /*##add values to users###############################################################*/
 
 INSERT INTO users
-VALUES (0, "saman", "sumanapala", "saman@123.csa", "saman","saman"); 
+VALUES (0, "saman", "sumanapala", "saman@123.csa", "saman","saman","active"); 
 
 INSERT INTO users
-VALUES (0, "kamal", "kamanapala", "kamal@123.csa",  "kamal","kamal");
+VALUES (0, "kamal", "kamanapala", "kamal@123.csa",  "kamal","kamal","active");
 
 
 
@@ -81,17 +81,23 @@ VALUES (0,"Ice cream", "desserts","", 50);
 /*###########create cart table#########################333*/
 DROP TABLE IF EXISTS cart;
 CREATE TABLE cart
-(user_id int NOT NULL ,
+(user_name varchar(255) NOT NULL ,
 item_id int NOT NULL);
 
 /*#############################################*/
 
 /*#####add values to cart#####################*/
 INSERT INTO cart
-VALUES (1,1); 
+VALUES ("namal",1); 
 
 INSERT INTO cart
-VALUES (1,2); 
+VALUES ("namal",2); 
+
+INSERT INTO cart
+VALUES ("kamal",10); 
+
+INSERT INTO cart
+VALUES ("kamal",11); 
 
 /*################*/
 
@@ -99,10 +105,19 @@ VALUES (1,2);
 DROP TABLE IF EXISTS orders;
 CREATE TABLE orders
 (order_id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
-ordered_date varchar(20) NOT NULL,
-item_id int NOT NULL,
-user_id int NOT NULL,
-status varchar(20)/*pending or delivered*/
+total_price varchar(20) NOT NULL,
+req_location varchar(200) NOT NULL,
+user_name varchar(200) NOT NULL,
+contact_num varchar(20)/*pending or delivered*/
 );
 
+/*add values to orders*/
 
+INSERT INTO orders
+VALUES (0,"150","Colombo","kamal", "03333333"); 
+
+INSERT INTO orders
+VALUES (0,"150","Jaela","kamal", "03333333"); 
+
+INSERT INTO orders
+VALUES (0,"150","asd","kamal", "03333333"); 
