@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -21,38 +25,9 @@
 	</head>
 	<body>
 		<div class="container">
-		<!--navigation bar seccion start here-->
-		<div class="navigation-bar" id="myTopnav">
-			<a href="#">
-				<img class="logo" src="images/those logo1.jpg">
-			</a>
-			<div class="search-container">
-				<form style="background-color: #8998af;"action="#">
-				  <input type="text" placeholder="Search.." name="search">
-				  <button type="submit"><i style="background-color: #8998af;" class="fa fa-search"></i></button>
-				</form>
-			</div>
-
-			<a class="tg" href="index.html">Home</a>
-			<a class="tg" href="menu.html">Menu</a>
-			<a class="tg" href="#">Stores</a>
-			<a class="tg" href="#">Locations</a>
-			<a class="tg" href="aboutus.html">About Us</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars dd"></i>
-			</a>
-
-			<a href="#" style="float: right;">
-				<img class="user-logo" src="">
-			</a>
-			<a class="tg_2" style="float: right;" href="login.html">User Account</a>
-			<a href="#" style="float: right;">
-				<img class="cart-logo" src="images/assets/usr.png">
-			</a>
-			
-
-		</div>
-		<!--navigation bar seccion end here-->
+		<?php
+include_once 'includes/navbar.php';
+?>
 	</div>
 	<div class="container">
 		<div class="abt_session_0" ">
@@ -96,49 +71,10 @@
 
 		</div>
 	</div>
-		<!-- footer starts here-->
+	<?php
+include_once 'includes/footer.php';
+?>
 
-		<div class="container footer">
-			<div class="footer_1">
-				<p><b>Hours :</b></p>
-				
-				<p>Mon-Fri: 8.00am - 9.00pm</p>
-				<p>Sat : 8.00am - 6.00pm</p>
-				<p>Sunday closed</p>
-			
-			</div>
-			<div class="footer_1">
-				<p><b>About :</b></p>
-				
-				<a href="#">ABOUT US</a><br>
-				<a href="#">FEEDBACK</a><br>
-				<a href="#">HOTLINE</a><br>
-				<a href="#">LOCATION</a>
-
-			</div>
-			<div class="footer_1">
-				<p><b>Find us on Social Media :</b></p>
-				<a href="#"><img src="images/assets/social media.png"></a>
-
-			</div>
-
-
-		</div>
-
-		<!--Footer ends here-->
-
-		<script>
-			/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-			function myFunction() {
-			  var x = document.getElementById("myTopnav");
-			  if (x.className === "navigation-bar") {
-				x.className += " responsive";
-			  } else {
-				x.className = "navigation-bar";
-			  }
-			} 
-			
-			</script>
 
 
 	</body>

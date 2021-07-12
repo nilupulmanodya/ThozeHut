@@ -13,40 +13,9 @@
 		
 		<!--session 0 strts here-->
 		<div class="container">
-			<!--navigation bar seccion start here-->
-			<nav class="navigation-bar" id="myTopnav">
-				<a href="#">
-					<img class="logo" src="images/those logo1.jpg">
-				</a>
-
-				<a href="#" style="float: right;">
-					<img class="user-logo" src="images/assets/cart.png">
-				</a>
-				<a class="tg_2" style="float: right;" href="#">User Account</a>
-				<a href="#" style="float: right;">
-					<img class="cart-logo" src="images/assets/usr.png">
-				</a>
-
-				<div class="search-container">
-					<form style="background-color: #8998af;"action="#">
-					  <input type="text" placeholder="Search.." name="search">
-					  <button type="submit"><i style="background-color: transparent; padding-left: 40%" class="fa fa-search"></i></button></input>
-					</form>
-				</div>
-
-				
-				
-
-				<a class="tg" href="index.php">Home</a>
-				<a class="tg" href="#">Menu</a>
-				<a class="tg" href="#">Stores</a>
-				<a class="tg" href="#">Offers</a>
-				<a class="tg" href="#">About Us</a>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-  				  <i class="fa fa-bars"></i>
- 				 </a>
-			</nav>
-			<!--navigation bar seccion end here-->
+		<?php
+include_once 'includes/navbar.php';
+?>
 			
 			
 		</div>
@@ -74,7 +43,7 @@
 	
 					require "php/connect.php";
 	
-	            	$sql1 = "SELECT * FROM items WHERE category='foods'";
+	            	$sql1 = "SELECT * FROM items WHERE category='Food'";
 	            	$result1 = mysqli_query($conn, $sql1);
 	            
 	            	if (mysqli_num_rows($result1) > 0) {
@@ -88,7 +57,7 @@
 	            
 					<div class="column">	
 						<div class="card">
-  							<img src="images/<?php echo $row1["image_src"]; ?>" alt="Denim Jeans" style="width:100%; background-color: transparent;">
+  							<img src="images/food/<?php echo $row1["image_src"]; ?>" alt="Denim Jeans" style="width:100%; background-color: transparent;">
   							<div class="detail">
   								<div class="name">
   									<h1 style="margin-bottom:0px; margin-top: 15px; "><?php echo $row1["item_name"]; ?></h1>	
@@ -127,7 +96,7 @@
 	
 					
 	
-	            	$sql2 = "SELECT * FROM items WHERE category='drinks'";
+	            	$sql2 = "SELECT * FROM items WHERE category='Drink'";
 	            	$result2 = mysqli_query($conn, $sql2);
 	            
 	            	if (mysqli_num_rows($result2) > 0) {
@@ -139,7 +108,7 @@
 	            
 					<div class="column">	
 						<div class="card">
-  							<img src="images/<?php echo $row2["image_src"]; ?>" alt="Denim Jeans" style="width:100%; background-color: transparent;">
+  							<img src="images/food/<?php echo $row2["image_src"]; ?>" alt="Denim Jeans" style="width:100%; background-color: transparent;">
   							<div class="detail">
   								<div class="name">
   									<h1 style="margin-bottom:0px; margin-top: 15px; "><?php echo $row2["item_name"]; ?></h1>	
@@ -178,7 +147,7 @@
 	
 					
 	
-	            	$sql3 = "SELECT * FROM items WHERE category='desserts'";
+	            	$sql3 = "SELECT * FROM items WHERE category='Desert'";
 	            	$result3 = mysqli_query($conn, $sql3);
 	            
 	            	if (mysqli_num_rows($result3) > 0) {
@@ -190,7 +159,7 @@
 	            
 					<div class="column">	
 						<div class="card">
-  							<img src="images/<?php echo $row3["image_src"]; ?>" alt="Denim Jeans" style="width:100%; background-color: transparent;">
+  							<img src="images/food/<?php echo $row3["image_src"]; ?>" alt="Denim Jeans" style="width:100%; background-color: transparent;">
   							<div class="detail">
   								<div class="name">
   									<h1 style="margin-bottom:0px; margin-top: 15px; "><?php echo $row3["item_name"]; ?></h1>	
@@ -220,50 +189,10 @@
      	</div>
      </div>
 
-		<div class="container footer">
-			<div class="footer_1">
-				<p><b>Hours :</b></p>
-				<br>
-				<p>Mon-Fri: 8.00am - 9.00pm</p>
-				<p>Sat : 8.00am - 6.00pm</p>
-				<p>Sunday closed</p>
-			
-			</div>
-			<div class="footer_1">
-				<p><b>About :</b></p>
-				<br>
-				<a href="#">ABOUT US</a><br><br>
-				<a href="#">FEEDBACK</a><br><br>
-				<a href="#">HOTLINE</a><br><br>
-				<a href="#">LOCATION</a>
+	 <?php
+include_once 'includes/footer.php';
+?>
 
-			</div>
-			<div class="footer_1">
-				<p><b>Find us on Social Media :</b></p>
-				<a href="#"><img src="images/assets/fb.png"></a>
-				<a href="#"><img src="images/assets/skp.png"></a>
-				<a href="#"><img src="images/assets/snp.png"></a>
-				<a href="#"><img src="images/assets/whatsp.png"></a>
-				<a href="#"><img src="images/assets/inst.jpeg"></a>
-			</div>
-
-
-		</div>
-
-
-
-		<script>
-			function myFunction() {
-  				var x = document.getElementById("myTopnav");
- 				if (x.className === "navigation-bar") {
-    				x.className += " responsive";
- 				} else {
-    				x.className = "navigation-bar";
-  				}
-			}
-
-			
-		</script>
 		<script>
 			function showTab(tabNumber) {
 	console.log(tabNumber);
