@@ -35,41 +35,9 @@ session_start();
 	
 <!--session 0 strts here-->
 <div class="container">
-	<!--navigation bar seccion start here-->
-	<nav class="navigation-bar" id="myTopnav">
-		<a href="#">
-			<img class="logo" src="images/those logo1.jpg">
-		</a>
-
-		<a href="#" style="float: right;">
-			<img class="user-logo" src="images/assets/cart.png">
-		</a>
-		<a class="tg_2" style="float: right;" href="#">User Account</a>
-		<a href="#" style="float: right;">
-			<img class="cart-logo" src="images/assets/usr.png">
-		</a>
-
-		<div class="search-container">
-			<form style="background-color: #8998af;"action="#">
-			  <input type="text" placeholder="Search.." name="search">
-			  <button type="submit"><i style="background-color: transparent; padding-left: 40%" class="fa fa-search"></i></button></input>
-			</form>
-		</div>
-
-		
-		
-
-		<a class="tg" href="index.html">Home</a>
-		<a class="tg" href="#">Menu</a>
-		<a class="tg" href="#">Stores</a>
-		<a class="tg" href="#">Locations</a>
-		<a class="tg" href="#">About Us</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			<i class="fa fa-bars"></i>
-		  </a>
-	</nav>
-	<!--navigation bar seccion end here-->
-	
+<?php
+include_once 'includes/navbar.php';
+?>
 	
 </div>
 <!--session 0 ends here-->
@@ -254,50 +222,10 @@ session_start();
 		<br>
 		
 </div>
+<?php
+include_once 'includes/footer.php';
+?>
 
-				<!-- footer starts here-->
-
-				<div class="container footer">
-					<div class="footer_1">
-						<p><b>Hours :</b></p>
-						
-						<p>Mon-Fri: 8.00am - 9.00pm</p>
-						<p>Sat : 8.00am - 6.00pm</p>
-						<p>Sunday closed</p>
-					
-					</div>
-					<div class="footer_1">
-						<p><b>About :</b></p>
-						
-						<a href="#">ABOUT US</a><br>
-						<a href="#">FEEDBACK</a><br>
-						<a href="#">HOTLINE</a><br>
-						<a href="#">LOCATION</a>
-		
-					</div>
-					<div class="footer_1">
-						<p><b>Find us on Social Media :</b></p>
-						<a href="#"><img src="images/assets/social media.png"></a>
-		
-					</div>
-		
-		
-				</div>
-		
-				<!--Footer ends here-->
-
-<script>
-	function myFunction() {
-		  var x = document.getElementById("myTopnav");
-		 if (x.className === "navigation-bar") {
-			x.className += " responsive";
-		 } else {
-			x.className = "navigation-bar";
-		  }
-	}
-
-	
-</script>
 
 </body>
 </html>
