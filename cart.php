@@ -58,7 +58,7 @@ include_once 'includes/navbar.php';
 		</h1>
 
 		<div>
-			<form method="post">
+			
 				<table class="center table_1">
 
 			
@@ -73,7 +73,7 @@ include_once 'includes/navbar.php';
 
 
 					<div>
-						<form method="post">
+						
 							<table class="center table_1">
 					<?php
 					
@@ -87,11 +87,16 @@ include_once 'includes/navbar.php';
 							$result2 = mysqli_query($conn, $sql2);
 
 							if (mysqli_num_rows($result1) > 0) {
-
+								$total;
 
 								// output data of each row
 								while($row2 = mysqli_fetch_assoc($result2)) {
+
+									$total = $total+$row2["price"];
+									/*echo $total;*/
 									?>
+
+									
 
 									<tr>
 										<td>
@@ -103,9 +108,7 @@ include_once 'includes/navbar.php';
 										<td>
 											<p><b>Rs.<?php echo $row2["price"]; ?></b></p>
 										</td>
-										<td>
-											<p><b>Quentity</b></p><input class="table_input" gittype="text" placeholder="1">
-										</td>
+										
 									</tr>
 									
 									
@@ -119,68 +122,23 @@ include_once 'includes/navbar.php';
 								}
 							
 						}
-					
-					}else{
-						echo "no user in cart";
-					}
-							?>
-	            
-					
-					
+						?>
 
-
-				</table>
-				<br>
+<br>
 
 				<div style="text-align:center;">
 					<!--Calculation-->
-					<input type="submit" value="Check Price" >
+					
 					<br><br>
-					<form>
+					<form action="includes/order.inc.php" method="post">
+
+
 						<table class="center">
 							<tr>
-								<td>
-									<b>
-									Sub Total
-									</b>
-								</td>
-								<td><b>
-									Rs.100
-									</b>
-								</td>
+								<td><b>Total</b></td>
+								<td><b><?php echo $total ?></b></td>
 							</tr>
-							<tr>
-								<td>
-									<b>
-									Delivery Fee
-									</b>
-								</td>
-								<td>
-									<b>
-									Rs.50
-									</b>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<b>
-									Total Price
-									</b>
-								</td>
-								<td>
-									<b>
-									Rs.150
-									</b>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									
-								</td>
-								<td>
-									
-								</td>
-							</tr>
+								
 							<tr>
 								<td>
 									<b>
@@ -188,9 +146,9 @@ include_once 'includes/navbar.php';
 									</b>
 								</td>
 								<td >
-									<textarea style="height: 100px;">
+									<input name="location" style="height: 100px;" required>
 										
-									</textarea>
+									
 									
 								</td>
 							</tr>
@@ -201,22 +159,46 @@ include_once 'includes/navbar.php';
 									</b>
 								</td>
 								<td>
-									<input type="text">
+									<input name="contact" type="text" required>
+									<input name="username" type="hidden" value="<?php echo $username ?>">
+									<input name="total" type ="hidden" value="<?php echo $total?>">
 									
 								</td>
 							</tr>
 
 
-						</table>
-						<br>
-							<input type="submit" value="Order Now" >
+						
+						<tr>
+						<td>
+						
+							<input name="order" type="submit" value="Order Now" ></td>
+							</tr>
 					</form>
+					</table>
 					
 
 		
 				</div>
+						
+
+						<?php
+					
+					}
+					
+					
+					else{
+						echo "<h1 style='text-align:center;'>No Items in Your cart</h1>";
+					}
+							?>
+	            
+					
+					
+
+
 				
-			</form>
+				
+				
+		
 		</div>
 		<br>
 		<br>
@@ -229,4 +211,3 @@ include_once 'includes/footer.php';
 
 </body>
 </html>
-?>
