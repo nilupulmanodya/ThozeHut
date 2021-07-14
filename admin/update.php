@@ -24,6 +24,10 @@
                     <li><a href="manage-user.php"><i class="fas fa-users"></i>Users</a></li>
                     <li><a href="manage-food.php"><i class="fas fa-hamburger"></i>Food</a></li>
                 </ul>
+                
+                <div class="logout-btn">
+                    <a href="../includes/admin-logout.php"><i class="fas fa-user-slash"></i>Logout</a>
+                </div>
 
                 <div class="footer">
                     <p>2021 All rights reserved</p>
