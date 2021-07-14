@@ -173,7 +173,7 @@ if (isset($_POST['submit'])) {
     else{
         $_SESSION['login'] = "<div class='log-error'>Username or password invalid<div>";
 
-        header("Location:admin_log.php?login=failed");
+        header("Location:index.php?login=failed");
     }
 }
 
