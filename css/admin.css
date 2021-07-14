@@ -52,6 +52,26 @@ body {
   background: #1e3799;
 }
 
+.logout-btn{
+  margin: 10px;
+  height: 50px;
+  background-color: #034f84;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.logout-btn a{
+  margin: 5px;
+  line-height: 50px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.logout-btn a i{
+  margin-right: 5px;
+}
+
 /*content*/
 .content {
   width: 100%;
