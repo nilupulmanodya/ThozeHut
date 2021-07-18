@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+			?>
+
+
 
 	<?php 
 
@@ -8,13 +14,20 @@
 		$user_name = $_SESSION['username'];
 		$item_id = $_POST['item_id'];
 
+		if(isset($_SESSION['username'])){
+
+
 		if (mysqli_query($conn,"INSERT INTO cart (user_name,item_id) VALUES ('$user_name','$item_id')",)) {
 			header("Location:menu.php");
 			exit;
 			echo " data added ";
-		}else{
-			echo "faild to insert record";
 		}
+	}else{
+			
+		header("Location:login.php");
+		exit();
+	}
+	
 	}
 	?>
 
@@ -30,7 +43,7 @@
 
 
 
-	<title>foodsr</title>
+	<title>Food Menu</title>
 	</head>
 	<body>
 		
@@ -66,7 +79,7 @@ include_once 'includes/navbar.php';
 	
 					require "php/connect.php";
 	
-	            	$sql1 = "SELECT * FROM items WHERE category='foods'";
+	            	$sql1 = "SELECT * FROM items WHERE category='Food'";
 	            	$result1 = mysqli_query($conn, $sql1);
 	            
 	            	if (mysqli_num_rows($result1) > 0) {
@@ -125,7 +138,7 @@ include_once 'includes/navbar.php';
 	
 					
 	
-	            	$sql2 = "SELECT * FROM items WHERE category='drinks'";
+	            	$sql2 = "SELECT * FROM items WHERE category='Drink'";
 	            	$result2 = mysqli_query($conn, $sql2);
 	            
 	            	if (mysqli_num_rows($result2) > 0) {
@@ -202,6 +215,11 @@ include_once 'includes/navbar.php';
   							</div>
 
   							<input type="hidden" name="item_id" value="<?php echo $row3["item_id"]; ?>" />
+							  <?php 
+							 	if (condition) {
+									 # code...
+								 } 
+							  ?>
 
   							<p><button value="Submit" name="cart" value="add" type="submit"><img style="background-color: transparent; padding-right: 5%; width: 15px;" src="images/assets/cart.png">Add to Cart</button></p>
 						</form>
