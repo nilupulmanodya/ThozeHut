@@ -78,7 +78,7 @@ if (isset($_POST['search'])) {
 	
 					require "php/connect.php";
 	
-	            	$sql1 = "SELECT * FROM items WHERE item_name='$search'";
+	            	$sql1 = "SELECT * FROM items WHERE item_name LIKE '%$search%'";/*WHERE item_name='%$search%'*/
 	            	$result1 = mysqli_query($conn, $sql1);
 	            
 	            	if (mysqli_num_rows($result1) > 0) {
@@ -92,7 +92,7 @@ if (isset($_POST['search'])) {
 	            
 					<div class="column">	
 						<form action="" method="post" class="card" id="add_to_cart">
-  							<img src="images/<?php echo $row1["image_src"]; ?>" alt="food" style="width:100%; background-color: transparent;">
+  							<img src="images/food/<?php echo $row1["image_src"]; ?>" alt="food" style="width:100%; background-color: transparent;">
   							<div class="detail">
   								<div class="name">
   							 		<h1 style="margin-bottom:0px; margin-top: 15px; "><?php echo $row1["item_name"]; ?></h1>	
