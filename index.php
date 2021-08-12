@@ -38,7 +38,7 @@ include_once 'includes/navbar.php';
 
 		<!-- Session 1 starts here -->
 		<div class="container session1">
-			<div class = "session1_1"></div>
+			
 			<div class = "session1_2">
 				<a href="">
 					<img src="images/rider.png" alt="Delivery bicycle image">
